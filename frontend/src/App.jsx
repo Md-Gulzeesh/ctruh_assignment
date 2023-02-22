@@ -8,6 +8,7 @@ function App() {
   const [colorValue, setColorValue] = useState("#ffffff"); //default value is white
   const canvasRef = useRef(null);
   const [toggleTheme, setToggleTheme] = useState("light");
+  const [twoDigitNumber, setTwoDigitNumber] = useState(10);
 
   // Function to handle div dimension change
   const handleResize = () => {
@@ -49,10 +50,8 @@ function App() {
   useEffect(() => {
     handleResize();
   }, [colorValue]);
-
-  console.log(toggleTheme)
   return (
-    <div className={toggleTheme === "light"?"lightMode":"darkMode"}>
+    <div className={toggleTheme === "light" ? "lightMode" : "darkMode"}>
       {" "}
       <div className="toggleThemeContainer">
         {toggleTheme === "light" ? (
@@ -63,7 +62,7 @@ function App() {
         ) : (
           <BsSun
             onClick={() => setToggleTheme("light")}
-            style={{ fontSize: "25px", cursor: "pointer",color:"white" }}
+            style={{ fontSize: "25px", cursor: "pointer", color: "white" }}
           />
         )}
       </div>
@@ -72,6 +71,7 @@ function App() {
           handleChange={handleChange}
           handleCopyToClipBoard={handleCopyToClipBoard}
           colorValue={colorValue}
+          toggleTheme={toggleTheme}
         />
         <ResizableCanvas canvasRef={canvasRef} colorValue={colorValue} />
       </div>
