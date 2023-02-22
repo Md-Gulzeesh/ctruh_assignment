@@ -30,10 +30,10 @@ function App() {
   const handleCanvasContext = () => {
     const canvas = canvasRef.current;
     const context = canvas.getContext("2d");
-    const centerX = canvas.width / 2;
-    const centerY = canvas.height / 2;
     canvas.width = canvas.getBoundingClientRect().width;
     canvas.height = canvas.getBoundingClientRect().height;
+    const centerX = canvas.width / 2;
+    const centerY = canvas.height / 2;
     context.fillStyle = colorValue;
     context.fillRect(0, 0, canvas.width, canvas.height);
     // conditional rendering for text colour
