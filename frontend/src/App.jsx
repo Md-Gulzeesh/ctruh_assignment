@@ -44,12 +44,18 @@ function App() {
     context.font = "bold 60px sans-serif";
     context.textAlign = "center";
     context.textBaseline = "middle";
-    context.fillText("hello", centerX, centerY);
+    context.fillText(twoDigitNumber, centerX, centerY);
   };
   // This will run whenever there is a change in the div's dimension or in the color's value.
   useEffect(() => {
     handleResize();
-  }, [colorValue]);
+  }, [colorValue, twoDigitNumber]);
+
+  const handleChangeInTwoDigitNumber = (e) => {
+    if (e.target.value < 100) {
+      setTwoDigitNumber(e.target.value);
+    }
+  };
   return (
     <div className={toggleTheme === "light" ? "lightMode" : "darkMode"}>
       {" "}
@@ -72,6 +78,8 @@ function App() {
           handleCopyToClipBoard={handleCopyToClipBoard}
           colorValue={colorValue}
           toggleTheme={toggleTheme}
+          handleChangeInTwoDigitNumber={handleChangeInTwoDigitNumber}
+          twoDigitNumber={twoDigitNumber}
         />
         <ResizableCanvas canvasRef={canvasRef} colorValue={colorValue} />
       </div>
