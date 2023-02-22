@@ -11,15 +11,20 @@
   gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 .color_picker_container>div{
   display: flex;
   flex-direction: column;
   border: 1px solid gainsboro;
-  width: 4em;
+  width: 4.5em;
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+}
+.color_picker_container>div>span{
+  text-transform: uppercase;
+  cursor: pointer;
 }
 input[type="color"]{
   -webkit-appearance: none;
@@ -36,5 +41,6 @@ select{
   border: 1px solid gainsboro;
   border-radius: 12px;
   outline: none;
+  padding: 8px;
   cursor: pointer;
 }
