@@ -1,0 +1,10 @@
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.color_picker_container{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
