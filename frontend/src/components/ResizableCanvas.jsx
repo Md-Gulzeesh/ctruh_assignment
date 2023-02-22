@@ -9,6 +9,7 @@ const ResizableCanvas = ({ colorValue, canvasRef }) => {
         width: "100%",
         height: "50vh",
         textAlign: "center",
+        margin:"20px"
       }}
     >
       <canvas
