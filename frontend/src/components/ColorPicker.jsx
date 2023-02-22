@@ -3,7 +3,7 @@ import React from "react";
 const ColorPicker = ({ handleChange, handleCopyToClipBoard, colorValue }) => {
   return (
     <div className="color_picker_container">
-      <div>
+      <div style={{background:"white"}}>
         <input
           onChange={handleChange}
           type="color"

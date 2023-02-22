@@ -1,3 +1,11 @@
+.darkMode,.lightMode{
+  background-color: #1a202c;
+  height: 100vh;
+  transition: all 250ms ease-in-out;
+}
+.lightMode{
+  background-color: white;
+}
 .container{
   display: flex;
   flex-direction: column;
@@ -43,4 +51,10 @@ select{
   outline: none;
   padding: 8px;
   cursor: pointer;
+}
+.toggleThemeContainer{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  padding: 20px 40px 0 0;
 }

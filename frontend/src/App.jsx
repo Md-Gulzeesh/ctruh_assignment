@@ -2,10 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import ColorPicker from "./components/ColorPicker";
 import ResizableCanvas from "./components/ResizableCanvas";
+import { BsSun, BsFillMoonStarsFill } from "react-icons/bs";
 
 function App() {
   const [colorValue, setColorValue] = useState("#ffffff"); //default value is white
   const canvasRef = useRef(null);
+  const [toggleTheme, setToggleTheme] = useState("light");
 
   // Function to handle div dimension change
   const handleResize = () => {
@@ -48,14 +50,31 @@ function App() {
     handleResize();
   }, [colorValue]);
 
+  console.log(toggleTheme)
   return (
-    <div className="container">
-      <ColorPicker
-        handleChange={handleChange}
-        handleCopyToClipBoard={handleCopyToClipBoard}
-        colorValue={colorValue}
-      />
-      <ResizableCanvas canvasRef={canvasRef} colorValue={colorValue} />
+    <div className={toggleTheme === "light"?"lightMode":"darkMode"}>
+      {" "}
+      <div className="toggleThemeContainer">
+        {toggleTheme === "light" ? (
+          <BsFillMoonStarsFill
+            onClick={() => setToggleTheme("dark")}
+            style={{ fontSize: "25px", cursor: "pointer" }}
+          />
+        ) : (
+          <BsSun
+            onClick={() => setToggleTheme("light")}
+            style={{ fontSize: "25px", cursor: "pointer",color:"white" }}
+          />
+        )}
+      </div>
+      <div className="container">
+        <ColorPicker
+          handleChange={handleChange}
+          handleCopyToClipBoard={handleCopyToClipBoard}
+          colorValue={colorValue}
+        />
+        <ResizableCanvas canvasRef={canvasRef} colorValue={colorValue} />
+      </div>
     </div>
   );
 }

@@ -6,7 +6,7 @@ const ResizableCanvas = ({ colorValue, canvasRef }) => {
       style={{
         resize: "both",
         overflow: "hidden",
-        width: "100%",
+        width: "80%",
         height: "50vh",
         textAlign: "center",
         margin:"20px"
