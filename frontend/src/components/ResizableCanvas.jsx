@@ -1,9 +1,18 @@
 import React from "react";
 
-const ResizableCanvas = ({ colorValue }) => {
+const ResizableCanvas = ({ colorValue, canvasRef }) => {
   return (
-    <div style={{ resize: "both", overflow: "hidden", width: "60%" }}>
+    <div
+      style={{
+        resize: "both",
+        overflow: "hidden",
+        width: "100%",
+        height: "50vh",
+        textAlign: "center",
+      }}
+    >
       <canvas
+        ref={canvasRef}
         style={{
           border: "1px solid gainsboro",
           borderRadius: "12px",
