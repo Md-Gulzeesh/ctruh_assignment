@@ -9,6 +9,7 @@ function App() {
   const canvasRef = useRef(null);
   const [toggleTheme, setToggleTheme] = useState("light");
   const [twoDigitNumber, setTwoDigitNumber] = useState(10);
+  const [colorPalette, setColorPalette] = useState("");
 
   // Function to handle div dimension change
   const handleResize = () => {
@@ -56,8 +57,14 @@ function App() {
       setTwoDigitNumber(e.target.value);
     }
   };
+  const handleColorPaletteChange = (e)=>{
+    setColorPalette(e.target.value);
+  }
   return (
-    <div className={toggleTheme === "light" ? "lightMode" : "darkMode"}>
+    <div
+      style={{ background: colorPalette}}
+      className={toggleTheme === "light" ? "lightMode" : "darkMode"}
+    >
       {" "}
       <div className="toggleThemeContainer">
         {toggleTheme === "light" ? (
@@ -80,6 +87,7 @@ function App() {
           toggleTheme={toggleTheme}
           handleChangeInTwoDigitNumber={handleChangeInTwoDigitNumber}
           twoDigitNumber={twoDigitNumber}
+          handleColorPaletteChange={handleColorPaletteChange}
         />
         <ResizableCanvas canvasRef={canvasRef} colorValue={colorValue} />
       </div>

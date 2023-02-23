@@ -6,7 +6,8 @@ const ColorPicker = ({
   colorValue,
   toggleTheme,
   handleChangeInTwoDigitNumber,
-  twoDigitNumber
+  twoDigitNumber,
+  handleColorPaletteChange
 }) => {
   return (
     <div className="color_picker_container">
@@ -26,8 +27,7 @@ const ColorPicker = ({
         <span onClick={handleCopyToClipBoard}>{colorValue}</span>
       </div>
       <select
-        name=""
-        id=""
+        onChange={handleColorPaletteChange}
         style={{
           background: toggleTheme === "light" ? "white" : "#2d3748",
           color: toggleTheme === "light" ? "#4A5568" : "#A0AEC0",
