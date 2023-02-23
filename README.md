@@ -49,3 +49,6 @@ You may also see any lint errors in the console.
 ### `npm run build`
 
 This command will make an optimised build for this app, and after the build, you will get the `dist` directory, which you can use to deploy it online.
+
+### `npm run preview`
+This will run the preview of the build directory, where you can see the output.
