@@ -46,7 +46,7 @@ function App() {
     context.textBaseline = "middle";
     context.fillText(twoDigitNumber, centerX, centerY);
   };
-  // This will run whenever there is a change in the div's dimension or in the color's value.
+  // This will run whenever there is a change in the div's dimension or number's value or in the color's value.
   useEffect(() => {
     handleResize();
   }, [colorValue, twoDigitNumber]);
