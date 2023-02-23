@@ -28,7 +28,7 @@
 - <p>Landing Page Light Mobile View</p>
 ![Landing Page  light Mobile View](https://github.com/Md-Gulzeesh/ctruh_assignment/blob/master/frontend/src/assets/landing_page_light_mobile.png?raw=true)
 - _Landing Page Dark Mode_
-- ![Landing Page dark](https://github.com/Md-Gulzeesh/ctruh_assignment/blob/master/frontend/src/assets/landing_page_dark_desktop.png?raw=true)
+![Landing Page dark](https://github.com/Md-Gulzeesh/ctruh_assignment/blob/master/frontend/src/assets/landing_page_dark_desktop.png?raw=true)
 - <p>Landing Page Dark Mode Mobile</p>
 ![Landing Page dark Mobile View](https://github.com/Md-Gulzeesh/ctruh_assignment/blob/master/frontend/src/assets/landing_page_dark_mobile.png?raw=true)
 
