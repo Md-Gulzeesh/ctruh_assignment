@@ -33,7 +33,7 @@
 ![Landing Page dark Mobile View](https://github.com/Md-Gulzeesh/ctruh_assignment/blob/master/frontend/src/assets/landing_page_dark_mobile.png?raw=true)
 
  - _Canvas Resizable_
-![Canvas Resizable](https://github.com/Md-Gulzeesh/ctruh_assignment/blob/master/frontend/src/assets/landing_page_dark_desktop.png?raw=true))
+![Canvas Resizable](https://github.com/Md-Gulzeesh/ctruh_assignment/blob/master/frontend/src/assets/landing_page_light_resizable_desktop.png?raw=true)
 
 ## To run project in local
 ### `cd frontend`
