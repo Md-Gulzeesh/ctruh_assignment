@@ -29,5 +29,23 @@
 - _Landing Page Mobile View_
 ![Landing Page Mobile View]()
 
+## To run project in local
+### `cd frontend`
 
+In the project directory, you can run:
 
+### `npm install`
+
+This will install all the dependencies required for this project.
+
+### `npm run dev`
+
+Runs the app in the development mode.
+Open [http://localhost:5173/](http://localhost:5173/) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm run build`
+
+This command will make an optimised build for this app, and after the build, you will get the `dist` directory, which you can use to deploy it online.
