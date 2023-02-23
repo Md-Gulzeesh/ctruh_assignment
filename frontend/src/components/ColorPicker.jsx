@@ -35,8 +35,8 @@ const ColorPicker = ({
       >
         <option value="">Choose color from palette</option>
         {colorPalette.map((elem, index) => (
-          <option key={index} value={elem.code}>
-            {elem.name}
+          <option key={index} value={elem[1]}>
+            {elem[0]}
           </option>
         ))}
       </select>
