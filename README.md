@@ -21,7 +21,7 @@
    - Netlify for frontend deployment
 <br/>
 
-## Glimpse of our assignment
+## Glimpse of this assignment
 
 - _Landing Page_
 
