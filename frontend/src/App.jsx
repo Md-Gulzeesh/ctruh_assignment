@@ -53,7 +53,7 @@ function App() {
   }, [colorValue, twoDigitNumber]);
 
   const handleChangeInTwoDigitNumber = (e) => {
-    if (e.target.value < 100) {
+    if (e.target.value < 100000) {
       setTwoDigitNumber(e.target.value);
     }
   };
